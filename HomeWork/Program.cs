@@ -72,7 +72,7 @@ namespace Lab
             string elapsedTime = String.Format("{0:00}", ts.Milliseconds);
             Console.WriteLine(elapsedTime);
 
-            time.Add(Convert.ToInt32(elapsedTime)*10);
+            time.Add(Convert.ToInt32(elapsedTime));
         }
 
         static void СonstantFunction(List<int> list,int count)
@@ -168,7 +168,6 @@ namespace Lab
         static void QuickSort(List<int> list,int count)
         {
              QuickSort(list, 0, count);
-             Thread.Sleep(50);
         }
 
     }
